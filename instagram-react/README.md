@@ -1,0 +1,11 @@
+-instagram-react
+--node_modules
+--public
+---assets
+---css
+--src
+---components
+----App.js
+----Corpo.js
+----Navbar.js
+---index.js

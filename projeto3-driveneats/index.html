@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>ZéFood</title>
+</head>
+<body>
+    <div class="topo">
+        <div>
+            <h1>DrivenEats</h1>
+            <h4>Sua comida em 6 minutos</h4>
+        </div>   
+    </div class="topo">
+    <div class="pedidos">
+        <h2>Primeiro, seu prato</h2>
+        <div class="pedidos-lista">
+            <div class="pedido1" onclick="selecionarPedido(this, 1);">
+                <img src="./midia/Roskovo-e-batata.jpeg" alt="prato de arroz, feijão, ovo mexido e batata frita">
+                <h5><strong>Roskovo e Batata</strong></h5>
+                <h6>Arroz, feijão, ovo mexido e batata frita</h6>
+                <div><h5>R$</h5><h5 class="valor">16,90</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="pedido1" onclick="selecionarPedido(this, 1);">
+                <img src="./midia/pizza-zepperoni.jpeg" alt="Pizza com presunto, queijo, molho especial e pepperoni">
+                <h5><strong>Pizza Zé Peroni</strong></h5>
+                <h6>Pizza com presunto, queijo, molho especial e <em>pepperoni</em></h6>
+                <div><h5>R$</h5><h5 class="valor">34,90</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="pedido1" onclick="selecionarPedido(this, 1);">
+                <img src="./midia/caldo-de-mandioca.jpeg" alt="caldo de mandioca, carne seca, bacon e cheiro verde">
+                <h5><strong>Caldo Mãedioca</strong></h5>
+                <h6>Caldo de mandioca, carne seca, bacon e cheiro verde</h6>
+                <div><h5>R$</h5><h5 class="valor">9,90</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+        <h2>Agora, sua bebida</h2>
+        <div class="pedidos-lista">
+            <div class="pedido2" onclick="selecionarPedido(this, 2);">
+                <img src="./midia/h2o.jpg" alt="Não é H2O, mas é H2 que é Uóóó!">
+                <h5><strong>H2 Uóóó!</strong></h5>
+                <h6>Não é H2O, mas é H2 que é Uóóó!</h6>
+                <div><h5>R$</h5><h5 class="valor">4,90</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="pedido2" onclick="selecionarPedido(this, 2);">
+                <img src="./midia/vinho.jpeg" alt="Uma taça. Melhor que o seco branco, e daqueles caros">
+                <h5><strong>Vinho Tinto Seco</strong></h5>
+                <h6>Uma taça. Melhor que o seco branco, e daqueles caros</h6>
+                <div><h5>R$</h5><h5 class="valor">70,00</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="pedido2" onclick="selecionarPedido(this, 2);">
+                <img src="./midia/agua-torneira.jpg" alt="Água de torneira. Nunca fez mal, caso contrário, terá seu dinheiro de volta">
+                <h5><strong>Água da "fonte"</strong></h5>
+                <h6>De torneira. Não faz mal, caso contrário terá reembloso</h6>
+                <div><h5>R$</h5><h5 class="valor">1,00</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+        <h2>Por fim, sua sobremesa</h2>
+        <div class="pedidos-lista">
+            <div class="pedido3" onclick="selecionarPedido(this, 3);">
+                <img src="./midia/14-bis.jpeg" alt="14 unidades de Bis">
+                <h5><strong>Santos Dumont</strong></h5>
+                <h6>14 unidades de Bis</h6>
+                <div><h5>R$</h5><h5 class="valor">6,50</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="pedido3" onclick="selecionarPedido(this, 3);">
+                <img src="./midia/brigadeiro.jpg" alt="Uma colher de brigadeiro caseiro, feito com leite Moça">
+                <h5><strong>Obrigadeiro</strong></h5>
+                <h6>Uma colher de brigadeiro caseiro, feito com leite Moça</h6>
+                <div><h5>R$</h5><h5 class="valor">3,00</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="pedido3" onclick="selecionarPedido(this, 3);">
+                <img src="./midia/bala-soft.jpeg" alt="Uma bala Soft. Não utilizamos como troco. Cuidado com a garganta!">
+                <h5><strong>Bala Soft</strong></h5>
+                <h6>1 un. Não utilizamos como troco. Cuidado com a garganta!</h6>
+                <div><h5>R$</h5><h5 class="valor">0,30</h5></div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <div class="rodape">
+        <div onclick="mostraPedido()">
+            <h3>Selecione os 3 itens<br>para fechar o pedido</h3>
+        </div>
+    </div>
+    <div class="confirmar-pedido escondido">
+        <div>
+            <h3><strong>Confirme seu pedido</strong></h3>
+            <ul>
+                <li><h3 class="prato"></h3><h3 class="valor1"></h3></li>
+                <li><h3 class="bebida"></h3><h3 class="valor2"></h3></li>
+                <li><h3 class="sobremesa"></h3><h3 class="valor3"></h3></li>
+                <li><h3><strong>TOTAL</strong></h3><h3 class="total"><strong></strong></h3></li>
+            </ul>
+            <div class="confirmar" onclick="cadastroPedido()">
+                <h3><strong>Tudo certo, pode pedir!</strong></h3>
+            </div>
+            <h3 class="cancelar-pedido" onclick="cancelaPedido()"><strong>Cancelar</strong></h3>
+        </div>
+    </div>
+    <div class="cadastro escondido">
+        <div>
+            <h2>Preencha com seus dados abaixo</h2>
+            <form class="formulario">
+                <ul>
+                    <li>
+                        <label for="nomesobrenome">Nome<em>*</em></label>
+                        <input type="text" class="nomesobrenome" required>
+                    </li>
+                    <li>
+                        <label for="endereco">End.<em>*</em></label>
+                        <input type="text" class="endereco" required>
+                    </li>
+                    <li>
+                        <label for="numero">nº<em>*</em></label>
+                        <input type="number" class="numero-endereco" required>
+                        <label for="complemento">Compl.</label>
+                        <input type="text" class="complemento">
+                    </li>
+                    <li>
+                        <label for="bairro">Bairro<em>*</em></label>
+                        <input type="text" class="bairro" required>
+                    </li>
+                    <li>
+                        <label for="cep">CEP<em>*</em></label>
+                        <input type="number" class="cep" required>
+                        <label for="cidade">Cidade<em>*</em></label>
+                        <input type="text" class="cidade" required>
+                    </li>
+                    <p><em>*</em> Preenchimento obrigatório</p>
+                </ul>
+                <input type="submit" class="confirmar-dados" onclick="validarFormulario()" value="Confirmar dados e realizar pedido">
+                <h3 class="cancelar-cadastro" onclick="cancelaCadastro()"><strong>Cancelar</strong></h3>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
