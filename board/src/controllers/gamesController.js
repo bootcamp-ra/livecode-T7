@@ -52,6 +52,7 @@ async function insert(req, res) {
     return badRequestResponse(res, 'Tá zuado isso dai...');
   }
   try {
+    //TODO verificar se existe o category id = categoryId
     const result = await connection.query(
       `INSERT INTO ${TABLE} 
       (name, image, "stockTotal", "categoryId", "pricePerDay")
