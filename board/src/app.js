@@ -1,6 +1,9 @@
 import express from 'express';
-
+import categoriesRoute from './routes/categoriesRoutes.js';
 const server = express();
+server.use(express.json());
+
+server.use(categoriesRoute);
 
 server.get('/status', (req, res) => {
   res.send('its aliveee!');
