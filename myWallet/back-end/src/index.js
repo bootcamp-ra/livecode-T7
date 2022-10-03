@@ -16,6 +16,6 @@ server.use(transaction);
 server.get('/status', (req, res) => {
   return res.send('ok');
 });
-server.listen(5000, () => {
-  console.log(`Magic happens on ${process.env.PORT_API}`);
+server.listen(process.env.PORT || 3000, () => {
+  console.log(`Magic happens on ${process.env.PORT}`);
 });
