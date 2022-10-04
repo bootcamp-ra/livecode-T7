@@ -2,6 +2,7 @@ import express from 'express';
 import categoriesRoute from './routes/categoriesRoutes.js';
 import gamesRoute from './routes/gamesRoutes.js';
 import clientsRoute from './routes/customersRoutes.js';
+import rentalRoute from './routes/rentalRoutes.js';
 
 const server = express();
 server.use(express.json());
@@ -9,6 +10,7 @@ server.use(express.json());
 server.use(categoriesRoute);
 server.use(gamesRoute);
 server.use(clientsRoute);
+server.use(rentalRoute);
 
 server.get('/status', (req, res) => {
   res.send('its aliveee!');
